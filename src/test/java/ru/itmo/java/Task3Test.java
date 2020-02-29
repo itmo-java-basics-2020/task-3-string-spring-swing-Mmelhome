@@ -77,7 +77,7 @@ public class Task3Test {
         assertThat(instance.isUniqueString("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"), is(false));
         assertThat(instance.isUniqueString(null), is(false));
         assertThat(instance.isUniqueString(""), is(false));
-        //assertThat(instance.isUniqueString(" space "), is(false));
+        assertThat(instance.isUniqueString(" space "), is(false));
         assertThat(instance.isUniqueString("wtf"), is(true));
     }
 

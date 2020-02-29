@@ -13,6 +13,9 @@ public class Task3 {
         if((inputArray == null)||(inputArray.length == 0)){
             return  new int[]{};
         }
+        if((inputArray.length == 1)){
+            return  inputArray;
+        }
         int[] outputArray = new int[inputArray.length];
         for(int i=0;i < inputArray.length - 1;i++){
             outputArray[i+1] = inputArray[i];
@@ -206,11 +209,12 @@ public class Task3 {
         if (separator == null){
             separator = ' ';
         }
-        for(int i=0; i < inputStrings.length - 1; i++){
-            ans = ans + inputStrings[i] + separator;
+        StringBuilder stringBuilder = new StringBuilder();
+        for(int i = 0; i < inputStrings.length; i++){
+            stringBuilder.append(inputStrings[i]);
+            if (inputStrings.length != i +1) stringBuilder.append(separator);
         }
-        ans = ans + inputStrings[inputStrings.length - 1];
-        return ans;
+        return stringBuilder.toString();
     }
 
     /**

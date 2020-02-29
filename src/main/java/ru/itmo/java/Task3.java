@@ -218,7 +218,7 @@ public class Task3 {
     }
 
     /**
-     * Напишите функцию, принимающую массив строк и строку-перфикс и возвращающую кол-во строк массива с данным префиксом
+     * Напишите функцию, принимающую массив строк и строку-перфикс и возвращающую кол-во строк массива с данным префиксо
      */
     int getStringsStartWithPrefix(String[] inputStrings, String prefix) {
         if ((inputStrings == null)||(inputStrings.length == 0)||(prefix == null)){
